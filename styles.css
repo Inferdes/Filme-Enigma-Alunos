@@ -1,17 +1,22 @@
 /* styles.css */
 
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-principal: #333 ;
+  }
+  
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(-cor-fundo);
+    color: var(--cor-principal);
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: var(--cor-principal);
+    color: var(--cor-fundo);
     padding: 20px;
     text-align: center;
     position: relative;
@@ -43,7 +48,7 @@ nav ul li {
 }
 
 nav a {
-    color: #fff;
+    color: var(--cor-fundo);
     text-decoration: none;
     font-size: 1.1em;
 }
@@ -53,8 +58,8 @@ nav a:hover {
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
+    color: var(--cor-principal);
+    border-bottom: 2px solid var(--cor-principal);
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -67,8 +72,8 @@ p {
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: var(--cor-fundo);
+    color: var(--cor-principal);;
     padding: 20px;
     text-align: center;
     position: relative;
